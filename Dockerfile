@@ -2,7 +2,7 @@ FROM lsiobase/alpine:3.12
 LABEL maintainer="GilbN"
 
 WORKDIR /geoip2influx
-COPY requirements.txt geoip2influx.py /geoip2influx/
+COPY requirements.txt geoip2influx.py nginx_parser.py /geoip2influx/
 RUN \
 echo " ## Installing packages ## " && \
 apk add --no-cache --virtual=build-dependencies \
